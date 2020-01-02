@@ -1,5 +1,5 @@
 #!/bin/bash
-echo -n "Choose an option: 1. Detect RTL Dongle, 2. Blacklist old drivers."
+echo -n "Choose an option: 1. Detect RTL Dongle, 2. Blacklist old drivers. "
  read CHOICE
  
  if [ $CHOICE = 1 ]
@@ -7,7 +7,7 @@ then
    dect=$(lsusb | grep RTL2838)
  if test -z "$dect"
  then
- echo "No RTL SDR dongle detected"
+ echo "No RTL SDR dongle detected."
  else 
   echo "RTL SDR detected:"
   echo $dect
@@ -18,7 +18,7 @@ then
 ls /etc/modprobe.d | grep blacklist-dvb.conf
 if test -a /etc/modprobe.d/blacklist-dvb.conf
 then
- echo "driver blacklist complete, restart advised"
+ echo "Driver blacklist complete, restart advised."
 else 
  echo "blacklist failed"
 fi
