@@ -1,0 +1,21 @@
+Test Date 10/9/2020
+
+I attempted to test the configuration of the SDR with a larger antenna
+and plugged into direct wall power. This was an attempt to solve the weak signal and power draw issues.
+
+Results:
+The test proved that wall power works without issue and that the USB battery pack was the source of the power issue.
+Signal was still weak, but I was able to pick up standard FM radio signal, however the signal was weaker than with the SDR connected to a laptop with the same setup.
+
+Issues:
+Thermal management needs attention, Rig was hot to the touch after a 5-minute test. heatsinks help improve thermals however diagnostics still show high heat levels, this may cause thermal throttling or shut down after continued operation.
+Wall Power defeats the point of a handheld system, need battery system that can provide sufficient power.
+
+Signal is weak, could be a side effect of test environment or processing power of Pi.
+Conclusion:
+
+Solving the battery issue is the biggest priority for this project, as being a handheld device was the core concept. 
+
+Thermal management is needed, I suspect that a small fan mounted to the case would provide enough airflow to cool the device long enough for reasonable use.
+
+Telescoping antenna does not pick up a strong enough signal on S.Pi.D.E.R despite working when on laptop. Need to test further.
